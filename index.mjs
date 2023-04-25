@@ -51,7 +51,7 @@ let {description, installation, usage, contributing, tests, email, github, licen
 
     
 let readmeText = `# Project Description
-
+${generateLicense(license)}
 ${description}
 
 ## Table of Content
@@ -88,7 +88,7 @@ https://github.com/${github}
 
 ## License
 
-${generateLicense(license)}
+${generateLicense(license)} This project is under the license of ${(license)}
 
 `
 fs.writeFile("README.md", readmeText)

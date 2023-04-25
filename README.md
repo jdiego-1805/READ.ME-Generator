@@ -31,6 +31,7 @@ a
 
 If you have any questions or would like to reach out to me, send me an email @a
 
+Here is my Github profile!
 https://github.com/a
 
 ## License
