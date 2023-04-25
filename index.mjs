@@ -1,18 +1,12 @@
 import inquirer from 'inquirer';
 import fs from "fs/promises";
-import { generate } from 'rxjs';
 
-let {description, tableOfContent, installation, usage, contributing, tests, questions, size} = await inquirer
+let {description, installation, usage, contributing, tests, questions, license} = await inquirer
     .prompt([
         {
             type: 'input',
             name: 'description',
             messages: "Write a description of your project:",
-        },
-        {
-            type: 'input',
-            name: 'tableOfContent',
-            messages: "Write a table of content for your project:",
         },
         {
             type: 'input',
@@ -27,12 +21,12 @@ let {description, tableOfContent, installation, usage, contributing, tests, ques
         {
             type: 'input',
             name: 'contributing',
-            messages: "Who contributed:",
+            messages: "How to contributed:",
         },
         {
             type: 'input',
             name: 'tests',
-            messages: "Show some test runs:",
+            messages: "Show instructions:",
         },
         {
             type: 'input',
@@ -57,7 +51,7 @@ ${description}
 
 ## Table of Content
 
-${tableOfContent}
+
 
 ## Installation
 
