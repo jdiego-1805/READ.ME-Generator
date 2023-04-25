@@ -1,5 +1,5 @@
 # Project Description
-
+[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
 a
 
 ## Table of Content
@@ -36,5 +36,5 @@ https://github.com/a
 
 ## License
 
-
+[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0) This project is under the license of Mozilla Public License 2.0
 

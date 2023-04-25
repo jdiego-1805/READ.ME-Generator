@@ -42,10 +42,7 @@ let {description, installation, usage, contributing, tests, email, github, licen
             type: 'list',
             name: 'license',
             message: 'What license do you need?',
-            choices: ['Mozilla Public License 2.0', 'The Perl License', 'The Artistic License 2.0'],
-            filter(val) {
-              return val.toLowerCase();
-            },
+            choices: ['Mozilla Public License 2.0', 'The Perl License', 'The Artistic License 2.0']
           },
     ])
 
