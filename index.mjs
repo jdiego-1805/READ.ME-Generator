@@ -1,37 +1,42 @@
 import inquirer from 'inquirer';
 import fs from "fs/promises";
 
-let {description, installation, usage, contributing, tests, questions, license} = await inquirer
+let {description, installation, usage, contributing, tests, email, github, license} = await inquirer
     .prompt([
         {
             type: 'input',
             name: 'description',
-            messages: "Write a description of your project:",
+            message: "Write a description of your project:",
         },
         {
             type: 'input',
             name: 'installation',
-            messages: "What installations are required:",
+            message: "What installations are required:",
         },
         {
             type: 'input',
             name: 'usage',
-            messages: "What is your project used for:",
+            message: "What is your project used for:",
         },
         {
             type: 'input',
             name: 'contributing',
-            messages: "How to contributed:",
+            message: "How to contributed:",
         },
         {
             type: 'input',
             name: 'tests',
-            messages: "Show instructions:",
+            message: "Show instructions:",
         },
         {
             type: 'input',
-            name: 'questions',
-            messages: "Any questions:",
+            name: 'email',
+            message: "Email:",
+        },
+        {
+            type: 'input',
+            name: 'github',
+            message: "Github username:",
         },
         {
             type: 'list',
@@ -51,7 +56,12 @@ ${description}
 
 ## Table of Content
 
-
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
+- [License](#license)
 
 ## Installation
 
@@ -71,7 +81,10 @@ ${tests}
 
 ## Questions
 
-${questions}
+If you have any questions or would like to reach out to me, send me an email @${email}
+
+Here is my Github profile!
+https://github.com/${github}
 
 ## License
 
