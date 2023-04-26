@@ -47,9 +47,9 @@ let {description, installation, usage, contributing, tests, email, github, licen
     ])
 
     
-let readmeText = `# Project Description
+let readmeText = `# ${description}
 ${generateLicense(license)}
-${description}
+
 
 ## Table of Content
 
